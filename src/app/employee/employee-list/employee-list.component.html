@@ -1,0 +1,33 @@
+<h3>Employees List</h3>
+<div class="row">
+    <div class="offset-10 col-md-12 mt-2"><a href="#"></a>Create employee</div>
+</div> <br>
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Telefon</th>
+                        <th>Is employee at work</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of employees">
+                        <td>{{emp.empName}}</td>
+                        <td>{{emp.empAddress}}</td>
+                        <td>{{emp.empEmail}}</td>
+                        <td>{{emp.empTelefon}}</td>
+                        <td>{{emp.empAtWork}}</td>
+                        <td><button type="button" id="details" class="btn btn-primary">Details</button></td>
+                        <td><button type="button" id="update" class="btn btn-success">Update</button></td>
+                        <td><button type="button" id="delete" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -4,10 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 
 const routes: Routes = [
-  //{ path: 'home', component: HomeComponent},
+  { path: 'home', component: HomeComponent},
   { path: '', component: HomeComponent },
+  { path:'project', loadChildren: () => import('./project/project.module').then(m => m.ProjectModule)  },
+  { path: 'employees', loadChildren: () => import('./employee/employee.module').then(e => e.EmployeeModule)},
   { path: '404', component: NotFoundComponent},
-  //{ path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 

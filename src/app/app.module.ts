@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectModule } from './project/project.module';
+import { EmployeeModule } from './employee/employee.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    ProjectModule,
+    EmployeeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

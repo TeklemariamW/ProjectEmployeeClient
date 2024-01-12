@@ -1,0 +1,32 @@
+
+<div class="row">
+    <div class="offset-10 col-md-2 mt-2">Create project</div>
+</div> <br>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Project Owner</th>
+                        <th>Project Creation Date</th>
+                        <th>Project End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let project of projects">
+                        <td>{{project.projectName}}</td>
+                        <td>{{project.projectOwner}}</td>
+                        <td>{{project.projectCreationTime | date: 'dd/MM/yyyy'}}</td>
+                        <td>{{project.projectEndTime | date: 'dd/MM/yyyy'}}</td>
+                        <td><button type="button" id="details" class="btn btn-primary">Details</button></td>
+                        <td><button type="button" id="update" class="btn btn-success">Update</button></td>
+                        <td><button type="button" id="delete" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -26,4 +26,12 @@ export class ProjectRepositoryService {
   public createProject =(route: string, project: Project) => {
     return this.http.post<Project>(this.createCompleteRoute(route, this.envUrl.urlAddress), project, this.generateHeaders());
   }
+
+  public updateProject = (route: string, project: Project) => {
+    return this.http.put(this.createCompleteRoute(route, this.envUrl.urlAddress), project, this.generateHeaders());
+  }
+
+  public deleteProject = (route: string) => {
+    this.http.delete(this.createCompleteRoute(route, this.envUrl.urlAddress));
+  }
 }
