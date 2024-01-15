@@ -13,13 +13,15 @@ import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectModule } from './project/project.module';
 import { EmployeeModule } from './employee/employee.module';
+import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    InternalServerComponent
   ],
   imports: [
     BrowserModule,
