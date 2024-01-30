@@ -6,6 +6,9 @@ const routes: Routes = [
   { path: 'list', component: EmployeeListComponent}
 ];
 
+/**
+ * NgModule that handles routing for the Employee module.
+ */
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

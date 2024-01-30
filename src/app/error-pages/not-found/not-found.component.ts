@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/**
+ * Component for displaying the "Not Found" page.
+ */
 @Component({
   selector: 'app-not-found',
   templateUrl: './not-found.component.html',

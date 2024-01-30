@@ -5,6 +5,9 @@ import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 
+/**
+ * Represents the Employee module.
+ */
 @NgModule({
   declarations: [
     EmployeeListComponent

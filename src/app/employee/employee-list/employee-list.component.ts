@@ -5,6 +5,9 @@ import { EmployeeRepositoryService } from '../../shared/services/employee-reposi
 import { ErrorHandlerService } from '../../shared/services/error-handler.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
+/**
+ * Represents the Employee List Component.
+ */
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
@@ -17,10 +20,16 @@ export class EmployeeListComponent implements OnInit{
 
   constructor(private repository: EmployeeRepositoryService, private errorHandler: ErrorHandlerService){}
 
+  /**
+   * Initializes the component and retrieves the list of employees.
+   */
   ngOnInit(): void {
       this.getEmployees();
   }
 
+  /**
+   * Retrieves the list of employees from the API.
+   */
   private getEmployees = () => 
   {
     const apiAddress: string = 'api/employee';

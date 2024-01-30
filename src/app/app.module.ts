@@ -15,6 +15,9 @@ import { ProjectModule } from './project/project.module';
 import { EmployeeModule } from './employee/employee.module';
 import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
 
+/**
+ * The root module of the application.
+ */
 @NgModule({
   declarations: [
     AppComponent,

@@ -4,6 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
 
+/**
+ * Defines the routes for the application.
+ * Each route maps a URL path to a component or a lazy-loaded module.
+ */
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: '', component: HomeComponent },
